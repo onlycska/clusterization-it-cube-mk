@@ -1,0 +1,7 @@
+System.AggregateException: One or more errors occurred. (Bad Request) ---> System.Net.Http.HttpRequestException: Bad Request
+   at TextExtractor.Domain.Extractor.<Extract>d__1.MoveNext() in E:\TFSProject\GIT\SmartInstruments\src\Utils\TextExtractor\TextExtractor.Domain\Extractor.cs:line 39
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at TextExtractor.ClientBase.FolderExtractor.<ExtractFile>d__9.MoveNext() in E:\TFSProject\GIT\SmartInstruments\src\Utils\TextExtractor\TextExtractor.ClientBase\FolderExtractor.cs:line 63
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: Bad Request
+   at TextExtractor.Domain.Extractor.<Extract>d__1.MoveNext() in E:\TFSProject\GIT\SmartInstruments\src\Utils\TextExtractor\TextExtractor.Domain\Extractor.cs:line 39<---
