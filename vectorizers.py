@@ -28,7 +28,7 @@ class Tfidf(Vectorizer):
 
     def fit_transform(self, dataset):
         stop_words = get_stop_words('russian')
-        stop_words.append(get_stop_words('english'))
+        stop_words.extend(get_stop_words('english'))
 
         self.vectorizer = TfidfVectorizer(
             use_idf=True,
